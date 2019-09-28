@@ -1,10 +1,16 @@
 package com.tanvir.demo;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class DataModel {
+    @Id
     private int id;
     private String name;
     private String jobDescription;
 
+    public DataModel(){}
 
     public DataModel(int id, String name, String jobDescription) {
         this.id = id;
